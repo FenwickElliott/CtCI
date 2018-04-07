@@ -2,7 +2,7 @@
 
 package ex1
 
-// IsUnique tests whether the given string composed entirely of unique characters
+// IsUniqueSpace tests whether the given string composed entirely of unique characters optimized for space
 func IsUniqueSpace(str string) bool {
 	for i := range str {
 		for j := i + 1; j < len(str); j++ {
@@ -10,6 +10,18 @@ func IsUniqueSpace(str string) bool {
 				return false
 			}
 		}
+	}
+	return true
+}
+
+// IsUniqueComplexity tests whether the given string composed entirely of unique characters optimized for complexity
+func IsUniqueComplexity(str string) bool {
+	present := make(map[rune]bool)
+	for _, r := range str {
+		if present[r] == true {
+			return false
+		}
+		present[r] = true
 	}
 	return true
 }
