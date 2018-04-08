@@ -1,6 +1,6 @@
 // Is Unique: Implement an algorithm to determine if a string has all unique characters. What if you can't use additional data structures?
 
-package ex1
+package chapter1
 
 // IsUniqueSpace tests whether the given string composed entirely of unique characters optimized for space
 func IsUniqueSpace(str string) bool {
