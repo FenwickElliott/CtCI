@@ -12,7 +12,7 @@ func TestPermutation(t *testing.T) {
 		{"abcd", "dcba", true},
 		{"", "", true},
 		{"apples", "oranges", false},
-		{"apple", "apples", true},
+		{"apples", "apples", true},
 		{"anything", "", false},
 	}
 	for _, tt := range tbl {
