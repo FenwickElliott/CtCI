@@ -17,7 +17,7 @@ func OneAway(in1, in2 string) bool {
 			if muts == 2 {
 				return false
 			}
-			if r == []rune(in2)[i+1] {
+			if len(in2) > len(in1) && r == []rune(in2)[i+1] {
 				shift++
 			}
 		}
