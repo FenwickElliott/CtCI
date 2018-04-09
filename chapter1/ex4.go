@@ -1,7 +1,6 @@
-// Palendrome Permutation: Is the given string a permutation of a palendrome
-
 package chapter1
 
+// PalendromePermutation checks if a string is a permutation of a palendrome
 func PalendromePermutation(input string) bool {
 	counts := make(map[rune]int)
 	for _, r := range input {

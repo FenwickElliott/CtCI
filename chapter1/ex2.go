@@ -1,9 +1,8 @@
-// Check Permutation: Given two strings, write a method to decide if one is a permutation of the other.
-
 package chapter1
 
 import "reflect"
 
+// Permutation checks if two strings are permutations of eachother.
 func Permutation(in1, in2 string) bool {
 	in1m := make(map[rune]int)
 	in2m := make(map[rune]int)

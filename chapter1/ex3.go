@@ -1,7 +1,6 @@
-//URLify: write a method that replaces all spaces in a string with "%20"
-
 package chapter1
 
+// URLify replaces all spaces in a string with '%20'
 func URLify(input string) string {
 	res := []rune{}
 	subOut := []rune(" ")[0]
